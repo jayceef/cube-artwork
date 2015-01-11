@@ -1,0 +1,9 @@
+<h1>Cube Artwork</h1>
+
+<% @posts.each do |post| %>
+  <section>
+    <h2><%= post.title %></h2>
+    <img src='<%= post.photo_url %>'>
+    <p><%= post.body %></p>
+  </section>
+<% end %>
