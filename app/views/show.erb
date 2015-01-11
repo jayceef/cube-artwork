@@ -1,0 +1,11 @@
+<h2><a href='/posts/<%= @post.id  %>'><%= @post.title %></a></h2>
+<h4><%= "#{DateTime.parse(@post.created_at.to_s)} - #{@post.comments.length} Comments" %></h4>
+<img src='<%= @post.photo_url %>'>
+<p><%= @post.body %></p>
+
+<h3>Comments</h3>
+<% @post.comments.each do |comment| %>
+  <p>
+    <span class='username'><%= comment.username %></span> - <%= comment.body %>
+  </p>
+<% end %>

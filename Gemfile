@@ -25,8 +25,10 @@ end
 group :test, :development do
   gem 'factory_girl'
   gem 'faker'
+  gem 'dotenv-rails'
 end
 
 group :development do
   gem 'image_suckr'
+  gem 'byebug'
 end

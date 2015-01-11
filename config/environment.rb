@@ -16,8 +16,14 @@ require 'active_record'
 require 'logger'
 
 require 'sinatra'
-require "sinatra/reloader" if development?
-require 'faker' if development?
+
+if development?
+  require 'sinatra/reloader'
+  require 'faker'
+  require 'byebug'
+  require 'dotenv'
+  Dotenv.load
+end
 
 require 'erb'
 

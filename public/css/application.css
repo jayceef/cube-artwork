@@ -6,11 +6,23 @@ img {
   max-width: 400px;
 }
 
+input,
+textarea {
+  display: block;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
 section {
   margin-bottom: 100px;
+}
+
+textarea {
+  height: 200px;
 }
 
 .username {
   font-weight: bold;
   font-size: 18px;
 }
+
